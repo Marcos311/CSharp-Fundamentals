@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CourseCSharp
 {
-    public class CrescenteeDecrescente
+    public class modulo5
     {
         public void Crescedecr(){
 
@@ -25,6 +25,22 @@ namespace CourseCSharp
                     Console.WriteLine("Crescente");
                 }
             }
+        }
+
+        public void somaIdade()
+        {
+            double idade = int.Parse(Console.ReadLine());
+            int count = 0;
+            double somaIdade = 0.0;
+
+            while (idade > 0)
+            {
+                somaIdade += idade;
+                count += 1;
+                idade = int.Parse(Console.ReadLine());
+            } 
+
+            Console.WriteLine("A média das idades é igual a : " + somaIdade / count);
         }
     }
 }

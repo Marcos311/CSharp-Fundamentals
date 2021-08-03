@@ -8,8 +8,8 @@ namespace CourseCSharp
     {
         public static void Main(string[] args)
         {
-            CrescenteeDecrescente ex = new CrescenteeDecrescente();
-            ex.Crescedecr();
+            modulo5 mod = new modulo5();
+            mod.somaIdade();
         }
     }
 }
