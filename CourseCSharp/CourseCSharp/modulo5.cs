@@ -35,12 +35,52 @@ namespace CourseCSharp
 
             while (idade > 0)
             {
-                somaIdade += idade;
-                count += 1;
-                idade = int.Parse(Console.ReadLine());
-            } 
+                    somaIdade += idade;
+                    count += 1;
+                    idade = int.Parse(Console.ReadLine());
+            }
 
-            Console.WriteLine("A média das idades é igual a : " + somaIdade / count);
+            if (count == 0)
+            {
+                Console.WriteLine("Impossível calcular");
+            } else
+            {
+
+                Console.WriteLine("A média das idades é igual a : " + somaIdade / count);
+            }
+        }
+
+        public void forBasico()
+        {
+            int N = int.Parse(Console.ReadLine()), x, soma=0;
+
+            for(int i=0; i < N; i++)
+            {
+                x = int.Parse(Console.ReadLine());
+                soma += x;
+            }
+
+            Console.WriteLine(soma);
+        }
+
+        public void forValordei()
+        {
+            int Max = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i <= Max; i++)
+            {
+                Console.WriteLine("Valor de i: " + i);
+            }
+        }
+
+        public void forValordeiDecr()
+        {
+            int Min = int.Parse(Console.ReadLine());
+
+            for(int i=4; i >= Min; i--)
+            {
+                Console.WriteLine("Valor decrescente de i : " + i);
+            }
         }
     }
 }
