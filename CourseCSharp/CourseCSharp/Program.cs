@@ -9,7 +9,7 @@ namespace CourseCSharp
         public static void Main(string[] args)
         {
             modulo5 mod = new modulo5();
-            mod.forValordeiDecr();
+            mod.somaImparIntervalo();
         }
     }
 }
